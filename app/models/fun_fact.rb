@@ -1,6 +1,9 @@
 class FunFact < ApplicationRecord
   belongs_to :country
 
+  has_one :region, through: :country  # added Oct 7
+    
+end
   #def region 
   #"#{self.country.region}"
 #end 
@@ -16,4 +19,4 @@ class FunFact < ApplicationRecord
   # def sea_area
   #   "#{self.sea_area} sq km"
   # end 
-end
+

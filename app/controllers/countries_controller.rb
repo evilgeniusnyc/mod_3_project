@@ -1,7 +1,7 @@
 class CountriesController < ApplicationController
     def index
         countries = Country.all
-        render json: countries
+        render json: countries, include: :fun_facts
     end
     
     def show

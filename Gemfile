@@ -42,7 +42,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'active_model_serializers'  # seperates, or extracts data in a seperate file. 
 
-# gem 'fast_json_api' (faster than 'active_model_serializer, but is less organized (I think returns a hash).
+# gem 'active_model_serializers'
+
+
+
+# this did not come with this (active record recommends it) gem 'active_model_serializers', '~> 0.10.0'
 
 gem 'jwt' #"if you're planning to do the auth" (Am I?)
   
