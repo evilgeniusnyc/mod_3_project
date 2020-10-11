@@ -1,6 +1,5 @@
 class CountrySerializer < ActiveModel::Serializer
   attributes :id, :name, :flag
-  has_one :region
   has_many :fun_facts
 end
 

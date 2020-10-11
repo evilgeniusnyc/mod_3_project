@@ -1,25 +1,25 @@
 class FunFactSerializer < ActiveModel::Serializer
        # Any instance method can be sent out via the attributes
-  attributes :id, :first, :second, :third, :country
+   attributes :id, :first, :second, :third
      # Writing AR Macros in your serializer calls on the appropriate serializer
        # The AR macro MUST be written in the model
  
-       has_one :region
+      
    
-     def first_fun_fact_item
-       first_fun_fact = self.object #the instance I am serializing 
-       "Flag Fun Fact#{first_fun_fact.name}"
-     end
+    #  def first_fun_fact_item
+    #    first_fun_fact = self.object #the instance I am serializing 
+    #    "Flag Fun Fact#{first_fun_fact.first}"
+    #  end
    
-     def second_fun_fact_item
-      second_fun_fact = self.object 
-      "Area Fun Fact#{second_fun_fact.name}"
-    end
+    #  def second_fun_fact_item
+    #   second_fun_fact = self.object 
+    #   "Area Fun Fact#{second_fun_fact.second}"
+    # end
 
-    def third_fun_fact_item 
-      third_fun_fact = self.object 
-      "Country Fun Fact#{third_fun_fact.name}"
-   end
+    # def third_fun_fact_item 
+    #   third_fun_fact = self.object 
+    #   "Country Fun Fact#{third_fun_fact.third}"
+  #  end
   end
  
 
